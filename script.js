@@ -27,13 +27,34 @@ text += "</ul>";
 
 document.getElementById("demo").innerHTML = text;
 
+
+//chiedo al utente di inserire un nuovo elemento nella lista della spesa
+
+let testoUtente = "<ul>";
+function myFunction () {
+    let utente = prompt ("Inserisci un elemento nella spesa");
+    let nuovaListaSpesa= testoUtente +"<li>" + utente + "</li>" ;
+    testoUtente = "</ul>";
+    document.getElementById("demo").innerHTML += nuovaListaSpesa;
+
+    arrayListaDellaSpesa.push(utente);
+
+
+
+
+
+}
+
+
 //stampo la array in console con while 
 let i = 0;
 while (i < spesaLen) {
+   
     console.log(arrayListaDellaSpesa[i]);
+    i++; }
 
-    i++;
-}
+
+
 
 
 
