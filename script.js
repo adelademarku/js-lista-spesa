@@ -15,9 +15,19 @@ l’elemento corrispondente viene rimosso dalla lista */
 let arrayListaDellaSpesa = ["Insalata", "Pomodori", "Zucchine", "Arancia", "Mandarini", "Mele", "Banane", "Tonno", "Uova",
     "Latte", "Yougurt"];
 
+    let spesaLen = arrayListaDellaSpesa.length;
+
+//stampo la array in console con while 
+let i = 0;
+while (i < spesaLen) {
+   
+    console.log(arrayListaDellaSpesa[i]);
+    i++; }
+
+
+
 //stampo gli elementi in html con for
 
-let spesaLen = arrayListaDellaSpesa.length;
 
 let text = "<ul>";
 for (let i = 0; i < spesaLen; i++) {
@@ -40,18 +50,9 @@ function myFunction () {
     arrayListaDellaSpesa.push(utente);
 
 
-
-
-
 }
 
 
-//stampo la array in console con while 
-let i = 0;
-while (i < spesaLen) {
-   
-    console.log(arrayListaDellaSpesa[i]);
-    i++; }
 
 
 
